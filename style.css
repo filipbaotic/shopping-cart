@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap');
+body {
+    background: #fff;
+    color: #214345;
+    font: 12px Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+.view-cart {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(168, 204, 201, .4);
+    background-image: url(bag.png);
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    transition-duration: .2s;
+}
+
+.view-cart:hover {
+    background-color: rgba(168, 204, 201, .6);
+    transition-duration: .2s;
+}
+
+.cart {
+    position: fixed;
+    top: 90px;
+    right: 16px;
+    width: 292px;
+    padding: 16px;
+    background: #fff;
+    border: 2px solid #77BABF;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, .08);
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 20px;
+    top: -12px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #77BABF transparent;
+}
+
+.arrow div {
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    margin: 3px 0 0 -10px;
+}
+
+.mycart {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E8EAE1;
+}
+
+.up,
+.down {
+    background: #EFF6F5;
+    border: 1px solid #E8EAE1;
+    text-align: center;
+    padding: 2px;
+    margin: -1px 0;
+    transition-duration: .2s;
+}
+
+.disabled {
+    background: #f6f6f6;
+    opacity: .6;
+}
+
+.items {
+    height: calc(3 * 88px);
+    overflow: hidden;
+}
+
+.item {
+    border-bottom: 1px solid #E8EAE1;
+    padding: 8px;
+}
+
+.img {
+    float: left;
+    width: 71px;
+    height: 71px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 90%;
+}
+
+.img.p1 {
+    background-image: url(iphone-12-pro.png);
+}
+
+.img.p2 {
+    background-image: url(ipad-pro.png);
+}
+
+.img.p3 {
+    background-image: url(apple-watch.png);
+}
+
+.img.p4 {
+    background-image: url(macbook-pro.png);
+}
+
+.img.p5 {
+    background-image: url(iphone-12.png);
+}
+
+.item .title {
+    font: 14px Montserrat;
+}
+
+ul.attributes {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.price {
+    margin-top: 8px;
+}
+
+.buttons {
+    padding-top: 16px;
+}
+
+.buttons button {
+    font: 14px Roboto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition-duration: .2s;
+}
+
+.edit {
+    width: 100px;
+    float: left;
+    color: #214345;
+    background: #fff;
+    border: 2px solid #E8EAE1;
+    padding: 12px;
+    margin-right: 16px;
+}
+
+.checkout {
+    width: 176px;
+    float: right;
+    color: #fff;
+    background: #B4CB34;
+    border: none;
+    font-weight: 500;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+.edit:hover {
+    background: #E8EAE1;
+    transition-duration: .2s;
+}
+
+.checkout:hover {
+    background: #A2B62F;
+    transition-duration: .2s;
+}
