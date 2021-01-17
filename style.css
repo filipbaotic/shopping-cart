@@ -13,6 +13,7 @@ body {
     right: 24px;
     width: 48px;
     height: 48px;
+    border: none;
     background-color: rgba(168, 204, 201, .4);
     background-image: url(bag.png);
     background-size: 30px 30px;
@@ -80,19 +81,20 @@ body {
 }
 
 .items {
-    height: calc(3 * 88px);
+    height: calc(3 * 90px);
     overflow: hidden;
 }
 
 .item {
     border-bottom: 1px solid #E8EAE1;
     padding: 8px;
+    height: 73px;
 }
 
 .img {
     float: left;
-    width: 71px;
-    height: 71px;
+    width: 73px;
+    height: 73px;
     margin-right: 8px;
     background-repeat: no-repeat;
     background-position: center;
