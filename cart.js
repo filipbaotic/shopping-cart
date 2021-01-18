@@ -1,7 +1,6 @@
 $(document).ready(function() {
-    $(".view-cart").click(function(e) {
-        e.preventDefault();
-        $(".cart").toggleClass("hidden");
+    $(".view-cart").click(function() {
+        $("#cart").toggleClass("hidden");
         $(".view-cart").toggleClass("active");
     });
 
@@ -32,4 +31,13 @@ $(document).ready(function() {
             $(".up").removeClass("disabled");
         }
     });
+    $(".view-cart").click(function() {
+        if ($('#cart').hasClass('hidden')) {
+            count = 0;
+            $('.list').css('margin-top', '0px');
+            $(".up").addClass("disabled");
+            $(".down").removeClass("disabled");
+        };
+    });
+
 });
