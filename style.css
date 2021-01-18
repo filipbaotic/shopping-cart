@@ -116,6 +116,10 @@ body {
     overflow: hidden;
 }
 
+.list {
+    transition: .2s ease-in-out;
+}
+
 .item {
     border-bottom: 1px solid #E8EAE1;
     padding: 8px;
