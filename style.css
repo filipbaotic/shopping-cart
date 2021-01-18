@@ -5,10 +5,11 @@ body {
     font: 12px Montserrat;
     margin: 0;
     padding: 0;
+    transition-duration: .2s;
 }
 
 .view-cart {
-    position: fixed;
+    position: absolute;
     top: 24px;
     right: 24px;
     width: 48px;
@@ -23,21 +24,51 @@ body {
     transition-duration: .2s;
 }
 
-.view-cart:hover {
+.view-cart:hover,
+.view-cart.active {
     background-color: rgba(168, 204, 201, .6);
     transition-duration: .2s;
 }
 
 .cart {
-    position: fixed;
+    position: absolute;
+    display: block;
     top: 90px;
     right: 16px;
     width: 292px;
     padding: 16px;
+    margin-bottom: 8px;
     background: #fff;
     border: 2px solid #77BABF;
     border-radius: 5px;
     box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, .08);
+    animation: show .2s ease-in-out;
+}
+
+.cart.hidden {
+    display: none;
+}
+
+@keyframes show {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    10% {
+        display: block;
+        opacity: 0;
+        margin-top: -24px;
+        transform: scale(0.98, 0.98);
+    }
+    90% {
+        opacity: 1;
+        margin-top: 0px;
+        transform: scale(1, 1);
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
 
 .arrow {
@@ -177,4 +208,20 @@ ul.attributes {
 .checkout:hover {
     background: #A2B62F;
     transition-duration: .2s;
+}
+
+@media only screen and (min-width: 376px) and (min-height: 556px) {
+    body {
+        background: linear-gradient(-45deg, #75b9bd, #56A9AE);
+    }
+    .content {
+        position: relative;
+        top: calc(50% - 270px);
+        left: calc(50% - 180px);
+        width: 360px;
+        height: 540px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, .08);
+    }
 }

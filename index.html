@@ -4,69 +4,73 @@
     <title>Košarica | Crash Course zadatak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="cart.js"></script>
 </head>
 
 <body>
-    <div class="view-cart"></div>
-    <div class="cart">
-        <div class="arrow">
-            <div></div>
-        </div>
-        <div class="mycart">My Cart (5 items)</div>
-        <div class="up disabled">▲</div>
-        <div class="items">
-            <div class="list"></div>
-            <div class="item">
-                <div class="img p1"></div>
-                <div class="title">iPhone 12 Pro</div>
-                <ul class="attributes">
-                    <li>Color: Pacific Blue</li>
-                    <li>Storage: 128GB</li>
-                </ul>
-                <div class="price">1 x $999.00</div>
+    <div class="content">
+        <div class="view-cart"></div>
+        <div class="cart hidden">
+            <div class="arrow">
+                <div></div>
             </div>
-            <div class="item">
-                <div class="img p2"></div>
-                <div class="title">iPad Pro 11-inch</div>
-                <ul class="attributes">
-                    <li>Color: Space Gray</li>
-                    <li>Storage: 64GB</li>
-                </ul>
-                <div class="price">1 x $799.00</div>
+            <div class="mycart">My Cart (5 items)</div>
+            <div class="up disabled">▲</div>
+            <div class="items">
+                <div class="list"></div>
+                <div class="item">
+                    <div class="img p1"></div>
+                    <div class="title">iPhone 12 Pro</div>
+                    <ul class="attributes">
+                        <li>Color: Pacific Blue</li>
+                        <li>Storage: 128GB</li>
+                    </ul>
+                    <div class="price">1 x $999.00</div>
+                </div>
+                <div class="item">
+                    <div class="img p2"></div>
+                    <div class="title">iPad Pro 11-inch</div>
+                    <ul class="attributes">
+                        <li>Color: Space Gray</li>
+                        <li>Storage: 64GB</li>
+                    </ul>
+                    <div class="price">1 x $799.00</div>
+                </div>
+                <div class="item">
+                    <div class="img p3"></div>
+                    <div class="title">Apple Watch SE Nike</div>
+                    <ul class="attributes">
+                        <li>Color: Space Gray</li>
+                        <li>Size: 40mm</li>
+                    </ul>
+                    <div class="price">1 x $279.00</div>
+                </div>
+                <div class="item">
+                    <div class="img p4"></div>
+                    <div class="title">MacBook Pro 13-inch M1</div>
+                    <ul class="attributes">
+                        <li>Color: Space Gray</li>
+                        <li>Storage: 256GB</li>
+                    </ul>
+                    <div class="price">1 x $1,299.00</div>
+                </div>
+                <div class="item">
+                    <div class="img p5"></div>
+                    <div class="title">iPhone 12</div>
+                    <ul class="attributes">
+                        <li>Color: Black</li>
+                        <li>Storage: 64GB</li>
+                    </ul>
+                    <div class="price">1 x $799.00</div>
+                </div>
             </div>
-            <div class="item">
-                <div class="img p3"></div>
-                <div class="title">Apple Watch SE Nike</div>
-                <ul class="attributes">
-                    <li>Color: Space Gray</li>
-                    <li>Size: 40mm</li>
-                </ul>
-                <div class="price">1 x $279.00</div>
-            </div>
-            <div class="item">
-                <div class="img p4"></div>
-                <div class="title">MacBook Pro 13-inch M1</div>
-                <ul class="attributes">
-                    <li>Color: Space Gray</li>
-                    <li>Storage: 256GB</li>
-                </ul>
-                <div class="price">1 x $1,299.00</div>
-            </div>
-            <div class="item">
-                <div class="img p5"></div>
-                <div class="title">iPhone 12</div>
-                <ul class="attributes">
-                    <li>Color: Black</li>
-                    <li>Storage: 64GB</li>
-                </ul>
-                <div class="price">1 x $799.00</div>
-            </div>
-        </div>
-        <div class="down">▼</div>
+            <div class="down">▼</div>
 
-        <div class="buttons">
-            <button class="edit" href="">Edit Cart</button>
-            <button class="checkout" href="">Checkout</button>
+            <div class="buttons">
+                <button class="edit" href="">Edit Cart</button>
+                <button class="checkout" href="">Checkout</button>
+            </div>
         </div>
     </div>
 </body>
